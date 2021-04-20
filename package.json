@@ -1,0 +1,25 @@
+{
+    "name": "vscode-syntax-highlight-test",
+    "displayName": "vscode-syntax-highlight-test",
+    "description": "vscode-syntax-highlight-test",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "vscsht",
+            "aliases": ["vscsht", "vscsht"],
+            "extensions": [".vscsht"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "vscsht",
+            "scopeName": "source.vscsht",
+            "path": "./syntaxes/vscsht.tmLanguage.json"
+        }]
+    }
+}
